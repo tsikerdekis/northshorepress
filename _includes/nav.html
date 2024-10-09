@@ -9,8 +9,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <img class="img-responsive" src="img/profile.png" alt="profile-pic" width="50" height="50" />
-      <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+	  <style>
+	  .navbar-brand-container {
+			display: flex;
+			align-items: center; /* Vertically align the items */
+		}
+
+		.navbar-brand-container img {
+			margin-right: 10px; /* Adds some space between the image and the text */
+		}
+
+		.navbar-brand {
+			display: inline-block;
+			vertical-align: middle; /* Ensure the text remains vertically aligned */
+		}
+	  </style>
+	  <div class="navbar-brand-container">
+			<img class="img-responsive" src="img/profile.png" alt="profile-pic" width="50" height="50" />
+			<a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+		</div>	
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
