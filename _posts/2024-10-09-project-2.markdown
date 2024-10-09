@@ -1,11 +1,11 @@
 ---
 layout: default
-modal-id: 5
-date: 2014-07-14
-img: safe.png
+modal-id: 2
+date: 2024-10-09
+img: netsec.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+project-date: September 2024
+# client: Start Bootstrap
+category: Non-Fiction / Technology
+description: Unlock your cybersecurity potential with a practical, example-driven guide designed to transform beginners into skilled security analysts in no time.
 ---
