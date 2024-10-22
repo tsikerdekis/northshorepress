@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 3
+date: 2024-11-01
+img: cane2.png
+alt: image-alt
+project-date: November 2024
+# client: Start Bootstrap
+category: Fiction / Contemporary Fantasy
+description: At the brink of apocalypse, what does it mean to exist beyond hope?
+
+---

@@ -6,6 +6,6 @@ img: cane.jpg
 alt: image-alt
 project-date: May 2013
 # client: Michail Tsikerdekis
-category: Fiction / Dark Fantasy
+category: Fiction / Contemporary Fantasy
 description: An immortal man, cursed for killing a god, must protect a mortal god from looming evil, in this action-packed fantasy novel.
 ---
