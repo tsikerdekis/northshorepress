@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy"
-permalink: /privacy-policy/
+permalink: /privacy-policy-park-it-at-all-costs/
 ---
 
 # Privacy Policy
