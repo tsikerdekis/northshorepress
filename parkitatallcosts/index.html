@@ -4,37 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Park It At All Costs</title>
+
+  <!-- Bangers font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
       background-color: #5D3A1A; /* warm brown */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      text-align: center;
       line-height: 1.6;
     }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+
+    header img.logo {
+      height: 64px;
+      width: auto;
+    }
+
+    header h1 {
+      font-family: 'Bangers', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: #FFC966;
+      user-select: none;
+    }
+
     .feature-section {
-      position: relative;
       width: 100%;
       max-width: 900px;
-      margin: 40px auto 60px;
+      margin: 20px auto 60px;
+      padding: 0 15px;
     }
+
     .feature-section img.feature-image {
       width: 100%;
       display: block;
       border-radius: 10px;
-    }
-    .feature-section img.logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 40%;
-      height: auto;
-      pointer-events: none;
       user-select: none;
-      opacity: 0.9;
     }
+
     .content-section {
       background-color: #3E2C12; /* darker brown */
       max-width: 900px;
@@ -44,27 +62,32 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: left;
     }
+
     .content-section h2 {
       color: #FFC966; /* soft gold */
       margin-bottom: 20px;
       font-size: 2rem;
       text-align: center;
     }
+
     .content-section p {
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
     }
+
     .features-list {
       font-size: 1.2rem;
       list-style: none;
       padding-left: 0;
       margin-bottom: 2rem;
     }
+
     .features-list li {
       margin-bottom: 0.8rem;
       padding-left: 1.5em;
       position: relative;
     }
+
     .features-list li::before {
       content: "•";
       color: #FFC966;
@@ -75,37 +98,61 @@
       line-height: 1;
       top: 0;
     }
+
     .download-buttons {
       text-align: center;
       margin-top: 20px;
     }
+
     .download-buttons a {
       display: inline-block;
       margin: 0 15px;
       transition: transform 0.3s ease;
     }
+
     .download-buttons a:hover {
       transform: scale(1.1);
     }
+
     .download-buttons img {
       height: 80px;
       width: auto;
       display: block;
+      user-select: none;
     }
+
     @media (max-width: 600px) {
-      .feature-section img.logo {
-        max-width: 60%;
+      header h1 {
+        font-size: 2rem;
       }
+
+      header {
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .feature-section,
       .content-section {
-        padding: 25px 15px;
+        padding: 0 10px;
+        margin: 20px 10px 60px;
+      }
+
+      .download-buttons img {
+        height: 60px;
       }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <img src="icon512.png" alt="Game Logo" class="logo" />
+    <h1>Park it at All Costs!</h1>
+  </header>
+
   <div class="feature-section">
     <img src="featureimage.png" alt="Feature Image" class="feature-image" />
-    <img src="icon512.png" alt="Game Logo" class="logo" />
   </div>
 
   <section class="content-section" aria-label="Game Features and Description">
@@ -134,5 +181,6 @@
       </a>
     </div>
   </section>
+
 </body>
 </html>
