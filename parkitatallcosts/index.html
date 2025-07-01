@@ -29,6 +29,10 @@
     header img.logo {
       height: 64px;
       width: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      user-select: none;
+      flex-shrink: 0;
     }
 
     header h1 {
@@ -37,13 +41,15 @@
       margin: 0;
       color: #FFC966;
       user-select: none;
+      white-space: nowrap;
     }
 
     .feature-section {
       width: 100%;
       max-width: 900px;
       margin: 20px auto 60px;
-      padding: 0 15px;
+      padding: 0 30px;
+      box-sizing: border-box;
     }
 
     .feature-section img.feature-image {
@@ -61,6 +67,7 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: left;
+      box-sizing: border-box;
     }
 
     .content-section h2 {
@@ -124,6 +131,7 @@
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+        white-space: normal;
       }
 
       header {
@@ -134,8 +142,8 @@
 
       .feature-section,
       .content-section {
-        padding: 0 10px;
-        margin: 20px 10px 60px;
+        padding: 0 15px;
+        margin: 20px 15px 60px;
       }
 
       .download-buttons img {
