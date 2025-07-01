@@ -2,37 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Park It At All Costs</title>
   <style>
     body {
-      background: url('/assets/logo-bg.png') no-repeat center center fixed;
-      background-size: cover;
+      margin: 0;
+      background-color: #5D3A1A; /* warm brown */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
-      color: white;
-      font-family: sans-serif;
+      line-height: 1.6;
     }
-    .container {
-      margin-top: 20%;
+    .feature-section {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 40px auto 60px;
     }
-    .buttons img {
+    .feature-section img.feature-image {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+    .feature-section img.logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 40%;
+      height: auto;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0.9;
+    }
+    .content-section {
+      background-color: #3E2C12; /* darker brown */
+      max-width: 900px;
+      margin: 0 auto 80px;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: left;
+    }
+    .content-section h2 {
+      color: #FFC966; /* soft gold */
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .content-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .features-list {
+      font-size: 1.2rem;
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
+    .features-list li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5em;
+      position: relative;
+    }
+    .features-list li::before {
+      content: "•";
+      color: #FFC966;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 1;
+      top: 0;
+    }
+    .download-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .download-buttons a {
+      display: inline-block;
+      margin: 0 15px;
+      transition: transform 0.3s ease;
+    }
+    .download-buttons a:hover {
+      transform: scale(1.1);
+    }
+    .download-buttons img {
       height: 80px;
-      margin: 20px;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .feature-section img.logo {
+        max-width: 60%;
+      }
+      .content-section {
+        padding: 25px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Park It At All Costs</h1>
-    <p>A fun parking puzzle game — now on Google Play and Steam!</p>
-    <div class="buttons">
-      <a href="https://play.google.com/store/apps/details?id=YOUR_ID">
-        <img src="/assets/google-play-badge.png" alt="Get it on Google Play">
+  <div class="feature-section">
+    <img src="/assets/feature-image.jpg" alt="Feature Image" class="feature-image" />
+    <img src="/assets/logo.png" alt="Game Logo" class="logo" />
+  </div>
+
+  <section class="content-section" aria-label="Game Features and Description">
+    <h2>Can you park perfectly?</h2>
+    <p>Put your driving precision to the ultimate test in this fun and challenging car parking game. Navigate tight spaces, dodge obstacles, and master realistic driving controls as you try to park your car exactly where it belongs.</p>
+    <p>From simple parking lots to crowded city streets and complex multi-level garages, each level brings a new twist to keep you on your toes. Squeeze through tight gaps, avoid bumping into barriers, and earn higher scores for flawless parking!</p>
+
+    <h2>Features:</h2>
+    <ul class="features-list">
+      <li>🚗 Realistic car physics and smooth controls</li>
+      <li>🅿️ Dozens of unique parking challenges</li>
+      <li>🌆 Varied environments — from calm suburbs to busy city scenes</li>
+      <li>🎯 Multiple camera angles for the perfect view</li>
+      <li>⭐️ Earn rewards for precision and speed</li>
+    </ul>
+
+    <p>Whether you’re a parking pro or just learning to steer, this game will sharpen your driving skills in a fun, stress-free way. Perfect for quick play sessions whenever you have a few minutes to spare.</p>
+    <p><strong>Download now and prove you’re the king of car parking!</strong></p>
+
+    <div class="download-buttons">
+      <a href="https://play.google.com/store/apps/details?id=YOUR_ID" aria-label="Download on Google Play">
+        <img src="/assets/google-play-badge.png" alt="Get it on Google Play" />
       </a>
-      <a href="https://store.steampowered.com/app/YOUR_APP_ID">
-        <img src="/assets/steam-badge.png" alt="Get it on Steam">
+      <a href="https://store.steampowered.com/app/YOUR_APP_ID" aria-label="Download on Steam">
+        <img src="/assets/steam-badge.png" alt="Get it on Steam" />
       </a>
     </div>
-  </div>
+  </section>
 </body>
 </html>
