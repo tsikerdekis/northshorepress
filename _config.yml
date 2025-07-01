@@ -68,3 +68,5 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+      redirects:
+        parkitatallcosts.northshorepress.co: "/parkitatallcosts/"
