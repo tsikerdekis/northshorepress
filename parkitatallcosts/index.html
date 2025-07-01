@@ -15,6 +15,9 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -68,6 +71,7 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: left;
       box-sizing: border-box;
+      flex-grow: 1;
     }
 
     .content-section h2 {
@@ -126,6 +130,16 @@
       width: auto;
       display: block;
       user-select: none;
+    }
+
+    footer {
+      background-color: #3E2C12;
+      color: #FFC966;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      user-select: none;
+      flex-shrink: 0;
     }
 
     @media (max-width: 600px) {
@@ -189,6 +203,10 @@
       </a>
     </div>
   </section>
+
+  <footer>
+    &copy; 2025 Northshore Press LLC
+  </footer>
 
 </body>
 </html>
