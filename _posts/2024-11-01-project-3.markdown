@@ -8,5 +8,5 @@ project-date: November 2024
 # client: Start Bootstrap
 category: Fiction / Contemporary Fantasy
 description: At the brink of apocalypse, what does it mean to exist beyond hope?
-external_url:https://www.amazon.com/gp/product/B0DKBK3B93
+external_url: https://www.amazon.com/gp/product/B0DKBK3B93
 ---
