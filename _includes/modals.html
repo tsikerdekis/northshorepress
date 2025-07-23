@@ -31,11 +31,12 @@
               </li>
               {% endif %}
               {% if post.category %}
-              <li>Service:
+              <li>Category:
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
-            </ul>
+            </ul><br />
+            <a href="{{ post.url }}" target="_blank">Get it here</a><br />
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>
