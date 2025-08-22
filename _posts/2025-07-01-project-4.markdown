@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2025-07-01
-img: parkit.png
+img: parkit.jpg
 alt: image-alt
 project-date: July 2025
 # client: Start Bootstrap
